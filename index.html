@@ -15,13 +15,14 @@
         <nav>
             <a href="#"><img src="assets/home.svg" alt="home-image" height="50"></a>
             <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#course-cors">Courses</a></li>
                     <li><a href="#">About us</a></li>
                 </ul>
             </div>
-            <i class="fa fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" onclick="showMenu(event)"></i>
         </nav>
         <div class="text-box">
             <h3>Hello! This is travel blog page</h3>
@@ -158,6 +159,19 @@
         </div>
 
     </section>
+
+    <script>
+        const navLinks = document.getElementById("navlinks");
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+            // navLinks.style.right = "none";
+        }
+        function showMenu(e) {
+            e.preventDefault();
+            navLinks.style.right = "0";
+            // navLinks.style.right = "display";
+        }
+    </script>
 
 </body>
 </html>
