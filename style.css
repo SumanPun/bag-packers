@@ -230,6 +230,21 @@ nav {
         width: 100%;
         display: block;
         margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+    }
+    .content-section .title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .content-section .content h3{
+        font-size: 20px;
+        margin-top: -8px;
+    }
+    .course-col {
+        width: 100%;
+        margin-top: 20px;
     }
 
 }
